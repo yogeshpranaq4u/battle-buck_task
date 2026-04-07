@@ -263,4 +263,13 @@ Reason:
 - Add CI with `./gradlew test`, `ktlint`, and `detekt`
 - Add anti-cheat guards such as impossible-score-jump detection and signed server events
 - Add telemetry around update latency, dropped frames, and collection counts
+
+## CI Quality Gate
+
+This repo now includes a GitHub Actions workflow at `.github/workflows/android-ci.yml` that runs on push/PR:
+
+- `:app:compileDebugKotlin`
+- `:app:lintDebug`
+- `:leaderboard-core:test`
+- `:score-engine:test`
 - Add process-death recovery if live session continuity matters
