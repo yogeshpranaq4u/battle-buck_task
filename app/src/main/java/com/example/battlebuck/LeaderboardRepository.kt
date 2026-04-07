@@ -8,15 +8,17 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 
-internal object LeaderboardRepository {
+internal class LeaderboardRepository(
+    moduleFactory: LeaderboardModuleFactory
+) {
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
-    val snapshots: StateFlow<LeaderboardSnapshot> = LeaderboardModuleFactory
+    val snapshots: StateFlow<LeaderboardSnapshot> = moduleFactory
         .leaderboard
-        .stream(LeaderboardModuleFactory.scoreGenerator.updates())
+        .stream(moduleFactory.scoreGenerator.updates())
         .stateIn(
             scope = appScope,
             started = SharingStarted.WhileSubscribed(stopTimeoutMillis = 5_000L),
-            initialValue = LeaderboardModuleFactory.leaderboard.initialSnapshot()
+            initialValue = moduleFactory.leaderboard.initialSnapshot()
         )
 }

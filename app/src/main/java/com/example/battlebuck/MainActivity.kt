@@ -66,13 +66,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.lerp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.battlebuck.ui.theme.*
 import com.example.battlebuck.ui.theme.BattlebuckTheme
 import kotlin.math.roundToInt
-
-private const val CURRENT_USER_ID = "p7"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -95,11 +94,17 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun LeaderboardScreen(viewModel: LeaderboardViewModel = viewModel()) {
+fun LeaderboardScreen() {
+    val context = LocalContext.current
+    val appContainer = (context.applicationContext as BattlebuckApplication).container
+    val viewModel: LeaderboardViewModel = viewModel(
+        factory = remember(appContainer) { LeaderboardViewModelFactory(appContainer) }
+    )
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val currentUser = uiState.rows.firstOrNull { it.id == CURRENT_USER_ID }
+    val currentUserId = viewModel.currentUserId
+    val currentUser = uiState.rows.firstOrNull { it.id == currentUserId }
     val leaderboardRows = uiState.rows
-        .filterNot { it.id == CURRENT_USER_ID }
+        .filterNot { it.id == currentUserId }
         .sortedBy { it.id }
     val listState = rememberLazyListState()
     val density = LocalDensity.current

@@ -15,6 +15,13 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        buildConfigField("long", "LEADERBOARD_SEED", "20260407L")
+        buildConfigField("long", "LEADERBOARD_MIN_DELAY_MS", "500L")
+        buildConfigField("long", "LEADERBOARD_MAX_DELAY_MS", "1400L")
+        buildConfigField("int", "LEADERBOARD_MIN_INCREMENT", "8")
+        buildConfigField("int", "LEADERBOARD_MAX_INCREMENT", "28")
+        buildConfigField("String", "CURRENT_USER_ID", "\"p7\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -36,6 +43,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

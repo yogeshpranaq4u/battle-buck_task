@@ -55,6 +55,11 @@ Responsibilities:
 - Renders a smooth real-time leaderboard in Compose
 - Applies a lightweight highlight animation only for the updated row
 
+Runtime configuration in `:app`:
+- `LeaderboardConfigProvider` loads players from `app/src/main/res/raw/players.json`
+- Score engine knobs (`seed`, delays, increments) are provided via `BuildConfig` fields
+- `SessionProvider` supplies current user id for UI personalization
+
 ## Architecture Overview
 
 The app uses a hybrid of modular Clean Architecture and MVVM:
