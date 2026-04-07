@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.scoreengine.DeterministicScoreGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-04-07T11:17:03.628Z" hostname="Yogeshs-MacBook-Air.local" time="0.063">
+  <properties/>
+  <testcase name="same seed produces the same score stream" classname="com.example.scoreengine.DeterministicScoreGeneratorTest" time="0.062"/>
+  <testcase name="scores only increase for each player" classname="com.example.scoreengine.DeterministicScoreGeneratorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

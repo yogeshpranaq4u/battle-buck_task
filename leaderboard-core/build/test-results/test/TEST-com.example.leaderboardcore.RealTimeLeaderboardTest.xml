@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.leaderboardcore.RealTimeLeaderboardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-07T11:17:03.199Z" hostname="Yogeshs-MacBook-Air.local" time="0.057">
+  <properties/>
+  <testcase name="stream applies score updates and ignores stale scores" classname="com.example.leaderboardcore.RealTimeLeaderboardTest" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

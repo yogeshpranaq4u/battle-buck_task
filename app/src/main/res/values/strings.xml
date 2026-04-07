@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Battlebuck</string>
+    <string name="label_legends">LEGENDS</string>
+    <string name="label_genesis_season">GENESIS SEASON</string>
+    <string name="label_season_ends">Season ends in 60 days</string>
+    <string name="label_leaderboard">Leaderboard</string>
+    <string name="label_info">i</string>
+</resources>

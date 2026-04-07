@@ -1,0 +1,65 @@
+package com.example.battlebuck.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val ArenaGold = Color(0xFFF6B73C)
+val SignalGreen = Color(0xFF2EC27E)
+val Slate900 = Color(0xFF101828)
+val Slate700 = Color(0xFF344054)
+val Slate100 = Color(0xFFF2F4F7)
+val Slate50 = Color(0xFFFAFAFA)
+val InkBlue = Color(0xFF1D2939)
+val AccentCoral = Color(0xFFEF6F6C)
+val ColorWhite = Color(0xFFFFFFFF)
+val DeepBlack = Color(0xFF0D0D0D)
+
+// Leaderboard palette tokens
+val ScreenBg = Color(0xFF0C0300)
+val HeaderWatermark = Color(0xFFCC3300)
+val HeaderAccent = Color(0xFFFF4800)
+val HeaderSubtext = Color(0xFFC0A294)
+val InfoBadgeBg = Color(0x4DFFFFFF)
+
+val SpotlightTop = Color(0xFFB52E00)
+val SpotlightBottom = Color(0xFF1E0700)
+val SpotlightGlow = Color(0x40FF2A00)
+val RayGlow = Color(0x30BA3800)
+val EmblemGlow = Color(0xFFFF3300)
+val EmblemFlameHigh = Color(0xFFFF2600)
+val EmblemFlameLow = Color(0xFFFF5E00)
+val EmblemOuterHigh = Color(0xFFFF5200)
+val EmblemOuterLow = Color(0xFFC41D00)
+val EmblemInnerHigh = Color(0xFFFF9E00)
+val EmblemInnerLow = Color(0xFFFF4800)
+val EmblemHood = Color(0xFF5A0800)
+
+val RowCurrent = Color(0xFFFF6A00)
+val RowCurrentSlope = Color(0xFFE75C00)
+val RowStripeA = Color(0xFF1A0603)
+val RowStripeB = Color(0xFF100302)
+val RowRankText = Color(0xFFFFD15C)
+val RowCurrentText = Color(0xFFFFF6EC)
+val ScorePillBg = Color(0xFF000000)
+val TrophyGold = Color(0xFFFFB200)
+
+val RankChipBgFrom = Color(0xFFD42200)
+val RankChipBgTo = Color(0xFFCB2A00)
+val RankChipBorderFrom = Color(0xFFFF6A1A)
+val RankChipBorderTo = Color(0xFFFF7F1F)
+
+val TrophyChipBg = Color(0xFF130805)
+val TrophyChipBorderFrom = Color(0xFFE09200)
+val TrophyChipBorderTo = Color(0xFFFF8E00)
+val TrophyChipTextFrom = Color(0xFFFFDB6E)
+val TrophyChipTextTo = Color(0xFFFFD24D)
+
+val RankShiftActive = Color(0xFF38E56B)
+val RankShiftIdle = Color(0xFF22C957)
+
+val AvatarBg1 = Color(0xFFE44A1B)
+val AvatarBg2 = Color(0xFFF1C40F)
+val AvatarBg3 = Color(0xFF2ECC71)
+val AvatarBg4 = Color(0xFF9B59B6)
+val AvatarHood = Color(0xFF150402)
+val AvatarBandEven = Color(0xFFCC0000)
+val AvatarBandOdd = Color(0xFF0066CC)
